@@ -5,14 +5,14 @@ export const APP_ROUTES: Routes = [
   {
     path:'',
     pathMatch: 'full',
-    redirectTo: 'AppComponent'
+    redirectTo: 'home'
   },
   {
     path: 'home',
     component: AppComponent,
   },
-  // {
-  //   path: 'cursos',
-  //   loadChildren: () => import('url').then(r => r.ROUTS)
-  // }
+  {
+    path: 'cursos',
+    loadChildren: () => import("./curso/curso.routes").then(r => r.CURSO_ROUTES)
+  }
 ];
