@@ -9,11 +9,53 @@
 
 .sidebar {
 
-  .sidebar-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 260px;
+  padding: 25px 20px;
+  background-color: #161a2d;
+
+  &-header {
+
+    display: flex;
+    align-items: center;
 
     img {
       width: 42px;
       border-radius: 50%;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: white;
+      margin-left: 23px;
+    }
+  }
+
+  &-links {
+
+    h4 {
+      color: white;
+      font-weight: 500;
+      margin: 10px 0;
+      white-space: nowrap;
+    }
+
+    li {
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 0 20px;
+        color: #dbd4d4e3;
+        font-weight: 500;
+        padding: 15px 20px;
+        white-space: nowrap;
+        text-decoration: none;
+      }
     }
   }
 

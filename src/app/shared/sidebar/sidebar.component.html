@@ -6,11 +6,53 @@
   </div>
 
   <ul class="sidebar-links">
+
+    <h4>
+      <span>Main menu</span>
+    </h4>
     <li>
       <a routerLink="">
         <span class="material-symbols-outlined">dashboard</span>
         Dashboard
       </a>
     </li>
+    <li>
+      <a routerLink="">
+        <i class="fas fa-spinner fa-spin"></i>
+        Overview
+        <fa-icon [icon]="faCoffee"></fa-icon>
+      </a>
+    </li>
+
+    <h4>
+      <span>Main menu</span>
+    </h4>
+    <li>
+      <a routerLink="">
+        <span class="material-symbols-outlined">notifications</span>
+        Notifications
+      </a>
+    </li>
+    <li>
+      <a routerLink="">
+        <i class="fas fa-user"></i>
+        Profile
+      </a>
+    </li>
+    <li>
+      <a routerLink="">
+        <i class="fas fa-camera-retro" style="color: green; font-size: 2em;"></i>
+        Settings
+      </a>
+    </li>
+    <div class="user-account">
+      <div class="user-profile">
+        <img src="" alt="Imagem de perfil">
+        <div class="user-detail">
+          <h3>Nome</h3>
+          <span>Developer</span>
+        </div>
+      </div>
+    </div>
   </ul>
 </aside>
