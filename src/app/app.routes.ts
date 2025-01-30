@@ -23,20 +23,20 @@ export const APP_ROUTES: Routes = [
         component: HomeComponent,
       },
       {
-        path: 'categorias',
-        loadChildren: () => import("./categoria/categoria.routes").then(r => r.CATEGORIA_ROUTES)
+        path: 'categories',
+        loadChildren: () => import("./category/category.routes").then(r => r.CATEGORY_ROUTES)
       },
       {
         path: 'certificados',
-        loadChildren: () => import("./certificado/certificado.routes").then(r => r.CERTIFICADO_ROUTES)
+        loadChildren: () => import("./certificate/certificate.routes").then(r => r.CERTIFICATE_ROUTES)
       },
       {
         path: 'cursos',
-        loadChildren: () => import("./curso/curso.routes").then(r => r.CURSO_ROUTES)
+        loadChildren: () => import("./course/course.routes").then(r => r.COURSE_ROUTES)
       },
       {
         path: 'plataformas',
-        loadChildren: () => import("./plataforma/plataforma.routes").then(r => r.PLATAFORMA_ROUTES)
+        loadChildren: () => import("./platform/plataform.routes").then(r => r.PLATAFORM_ROUTES)
       }
     ]
   }

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 import { SidebarComponent } from "../shared/sidebar/sidebar.component";
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-core',
@@ -12,7 +11,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   imports: [
     SidebarComponent,
     RouterOutlet,
-    FontAwesomeModule
   ]
 })
 export class CoreComponent implements OnInit {

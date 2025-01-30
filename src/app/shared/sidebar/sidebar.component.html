@@ -1,7 +1,7 @@
 <aside class="sidebar">
 
   <div class="sidebar-header">
-    <img src="./assets/logos/formula1-logo.jpg" alt="logo da aplicação SanTomás">
+    <img src="./assets/logos/formula1-logo.jpg" alt="logo do SanTomás">
     <h2>Fórmula1</h2>
   </div>
 
@@ -12,15 +12,14 @@
     </h4>
     <li>
       <a routerLink="">
-        <span class="material-symbols-outlined">dashboard</span>
+        <fa-icon [icon]="['fas', 'chart-line']"></fa-icon>
         Dashboard
       </a>
     </li>
     <li>
       <a routerLink="">
-        <i class="fas fa-spinner fa-spin"></i>
+        <fa-icon [icon]="['fas', 'home']"></fa-icon>
         Overview
-        <fa-icon [icon]="faCoffee"></fa-icon>
       </a>
     </li>
 
@@ -29,22 +28,23 @@
     </h4>
     <li>
       <a routerLink="">
-        <span class="material-symbols-outlined">notifications</span>
+       <fa-icon [icon]="['fas', 'bell']" class="text-danger"></fa-icon>
         Notifications
       </a>
     </li>
     <li>
       <a routerLink="">
-        <i class="fas fa-user"></i>
+        <fa-icon [icon]="['fas', 'user']"></fa-icon>
         Profile
       </a>
     </li>
     <li>
       <a routerLink="">
-        <i class="fas fa-camera-retro" style="color: green; font-size: 2em;"></i>
+        <fa-icon [icon]="['fas', 'gear']"></fa-icon>
         Settings
       </a>
     </li>
+
     <div class="user-account">
       <div class="user-profile">
         <img src="" alt="Imagem de perfil">
@@ -54,5 +54,7 @@
         </div>
       </div>
     </div>
+
   </ul>
+
 </aside>

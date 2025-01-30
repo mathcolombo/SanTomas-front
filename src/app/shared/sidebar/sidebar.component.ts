@@ -1,20 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 
+//FontAwesome Icons
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.scss'],
   imports: [
     FontAwesomeModule
-  ]
+  ],
+  templateUrl: './sidebar.component.html',
+  styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-
-  faCoffee = faCoffee;
 
   constructor() { }
 
