@@ -27,15 +27,15 @@ export const APP_ROUTES: Routes = [
         loadChildren: () => import("./category/category.routes").then(r => r.CATEGORY_ROUTES)
       },
       {
-        path: 'certificados',
+        path: 'certificates',
         loadChildren: () => import("./certificate/certificate.routes").then(r => r.CERTIFICATE_ROUTES)
       },
       {
-        path: 'cursos',
+        path: 'courses',
         loadChildren: () => import("./course/course.routes").then(r => r.COURSE_ROUTES)
       },
       {
-        path: 'plataformas',
+        path: 'plataforms',
         loadChildren: () => import("./platform/plataform.routes").then(r => r.PLATAFORM_ROUTES)
       }
     ]
