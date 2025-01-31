@@ -20,7 +20,7 @@
   background: #161a2d;
   transition: all 0.4s ease;
 
-  &:hover {
+  &.expanded {
     width: 260px;
 
     .sidebar-links {

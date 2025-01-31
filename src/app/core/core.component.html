@@ -1,2 +1,4 @@
-<app-sidebar></app-sidebar>
-<router-outlet></router-outlet>
+<app-sidebar (toogle)="onSidebarToggle($event)"></app-sidebar>
+<div class="content" [ngStyle]="{'margin-left.px': isSidebarExpanded ? 250 : 85}">
+  <router-outlet></router-outlet>
+</div>

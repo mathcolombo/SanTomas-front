@@ -22,10 +22,10 @@ export class AppComponent implements OnInit{
   ) {}
 
   ngOnInit(): void {
-    this.carregarVLibras();
+    this.loadVLibras();
   }
 
-  private carregarVLibras(): void {
+  private loadVLibras(): void {
     const script = document.createElement('script');
     script.src = 'https://vlibras.gov.br/app/vlibras-plugin.js';
     script.onload = () => {

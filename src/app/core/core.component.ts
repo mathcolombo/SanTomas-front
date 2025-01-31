@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 import { SidebarComponent } from "../shared/components/sidebar/sidebar.component";
 
@@ -11,13 +12,19 @@ import { SidebarComponent } from "../shared/components/sidebar/sidebar.component
   imports: [
     SidebarComponent,
     RouterOutlet,
+    CommonModule
   ]
 })
 export class CoreComponent implements OnInit {
+
+  isSidebarExpanded = false;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  onSidebarToggle(expanded: boolean) {
+    this.isSidebarExpanded = expanded;
+  }
 }
