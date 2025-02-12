@@ -1,15 +1,15 @@
-export class PlataformResponse {
+export class PlatformResponse {
   public Id: number;
-  public Name: string;
+  public PlatformName: string;
   public Url: string;
 
   constructor(
     id: number,
-    name: string,
+    platformName: string,
     url: string
   ) {
     this.Id = id;
-    this.Name = name;
+    this.PlatformName = platformName;
     this.Url = url;
   }
 }

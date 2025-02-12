@@ -12,8 +12,17 @@ import { IconService } from './shared/services/icon.service';
     RouterOutlet,
     FontAwesomeModule
   ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  template: `
+    <router-outlet></router-outlet>
+
+    <!-- Implementação do vLibras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+  `
 })
 export class AppComponent implements OnInit{
 

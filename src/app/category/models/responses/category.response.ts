@@ -1,12 +1,15 @@
 export class CategoryResponse {
   public Id: number;
-  public Name: string;
+  public CategoryName: string;
+  public MainCategory: any;
 
   constructor(
     id: number,
-    name: string
+    categoryName: string,
+    mainCategory: any
   ) {
     this.Id = id;
-    this.Name = name;
+    this.CategoryName = categoryName;
+    this.MainCategory = mainCategory;
   }
 }

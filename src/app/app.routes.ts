@@ -36,7 +36,7 @@ export const APP_ROUTES: Routes = [
       },
       {
         path: 'plataforms',
-        loadChildren: () => import("./platform/plataform.routes").then(r => r.PLATAFORM_ROUTES)
+        loadChildren: () => import("./platform/platform.routes").then(r => r.PLATFORM_ROUTES)
       }
     ]
   }

@@ -2,7 +2,6 @@ import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
 import { APP_ROUTES } from './app.routes';
-import { IconService } from './shared/services/icon.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [

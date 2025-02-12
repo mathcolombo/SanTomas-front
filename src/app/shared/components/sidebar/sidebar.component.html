@@ -2,9 +2,14 @@
   [class.expanded]="isExpanded">
 
   <!-- Logo -->
-  <div class="sidebar-header">
-    <img src="./assets/logos/formula1-logo.jpg" alt="logo do SanTomás">
-    <h2>Fórmula1</h2>
+  <div class="d-flex align-items-center">
+    <img class="rounded-circle"
+      src="./assets/logos/formula1-logo.jpg"
+      alt="logo do SanTomás"
+      width="42">
+    <h2 class="fs-2 text-white fw-semibold" style="margin-left: 23px;">
+      Fórmula1
+    </h2>
   </div>
 
   <!-- Menu -->
@@ -15,13 +20,17 @@
       <div class="menu-separator"></div>
     </h4>
     <li>
-      <a routerLink="">
+      <a class="d-flex align-items-center fw-medium text-nowrap gap-4 text-decoration-none px-3 py-3" style="color: #dbd4d4e3"
+        routerLink=""
+      >
         <fa-icon [icon]="['fas', 'chart-line']"></fa-icon>
         Dashboard
       </a>
     </li>
     <li>
-      <a routerLink="">
+      <a class="d-flex align-items-center fw-medium text-nowrap gap-4 text-decoration-none px-3 py-3" style="color: #dbd4d4e3"
+        routerLink=""
+      >
         <fa-icon [icon]="['fas', 'home']"></fa-icon>
         Overview
       </a>
@@ -32,8 +41,10 @@
       <div class="menu-separator"></div>
     </h4>
     <li>
-      <a routerLink="">
-       <fa-icon [icon]="['fas', 'bell']" class="text-danger"></fa-icon>
+      <a class="d-flex align-items-center fw-medium text-nowrap gap-4 text-decoration-none px-3 py-3" style="color: #dbd4d4e3"
+        routerLink=""
+      >
+       <fa-icon [icon]="['fas', 'bell']"></fa-icon>
         Notifications
       </a>
     </li>
@@ -43,18 +54,23 @@
       <div class="menu-separator"></div>
     </h4>
     <li>
-      <a routerLink="">
+      <a class="d-flex align-items-center fw-medium text-nowrap gap-4 text-decoration-none px-3 py-3" style="color: #dbd4d4e3"
+        routerLink=""
+      >
         <fa-icon [icon]="['fas', 'user']"></fa-icon>
         Profile
       </a>
     </li>
     <li>
-      <a routerLink="">
+      <a class="d-flex align-items-center fw-medium text-nowrap gap-4 text-decoration-none px-3 py-3" style="color: #dbd4d4e3"
+        routerLink=""
+      >
         <fa-icon [icon]="['fas', 'gear']"></fa-icon>
         Settings
       </a>
     </li>
 
+    <!-- User area -->
     <div class="user-account">
       <div class="user-profile">
         <img src="./assets/logos/formula1-logo.jpg" alt="Imagem de perfil">
