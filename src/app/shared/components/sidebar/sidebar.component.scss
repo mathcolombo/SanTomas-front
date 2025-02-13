@@ -8,14 +8,7 @@
 
 .sidebar {
 
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
   width: 85px;
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
   padding: 25px 20px;
   background: #161a2d;
   transition: all 0.4s ease;
@@ -26,7 +19,6 @@
     .sidebar-links {
 
       h4 {
-
         span {
           opacity: 1;
         }
@@ -36,30 +28,15 @@
         transition-delay: 0s;
         transform: scaleX(0);
       }
-
-      .user-account {
-        background: #ffffff2d;
-        border-radius: 4px;
-      }
     }
   }
 
   &-links {
 
-    list-style: none;
-    margin-top: 20px;
     height: 80%;
-    overflow-y: auto;
     scrollbar-width: none;
 
     h4 {
-
-      color: white;
-      font-weight: 500;
-      font-size: medium;
-      margin: 10px 0;
-      white-space: nowrap;
-      position: relative;
 
       span {
         opacity: 0;
@@ -80,57 +57,18 @@
     }
 
     li {
-
       a {
         &:hover {
           background: #ffffff2d;
           color: white;
-          border-radius: 4px;
         }
       }
     }
   }
 
   .user-account {
-
-    display: flex;
-    align-items: center;
-    margin-top: auto;
     padding: 12px 10px;
     margin-left: -10px;
-    color: #e5dede;
-
-    .user-profile {
-
-      display: flex;
-      align-items: center;
-      color: #e5dede;
-
-      img {
-        width: 42px;
-        border-radius: 50%;
-      }
-
-      .user-detail {
-
-        margin-left: 23px;
-        white-space: nowrap;
-
-        h3 {
-          font-size: 1rem;
-          font-weight: 600;
-        }
-
-        span {
-          font-size: 0.775rem;
-          font-weight: 600;
-          display: block;
-          margin-top: 0;
-        };
-      }
-
-    }
-
   }
 
 }
