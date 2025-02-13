@@ -1,0 +1,93 @@
+<aside class="sidebar d-flex flex-column position-fixed top-0 start-o vh-100 overflow-hidden justify-content-around"
+  [class.expanded]="isExpanded">
+
+  <!-- Logo -->
+  <div class="d-flex align-items-center">
+    <img class="rounded-circle"
+      src="./assets/logos/formula1-logo.jpg"
+      alt="logo do SanTomás"
+      width="42">
+    <h2 class="fs-2 text-white fw-semibold" style="margin-left: 23px;">
+      Fórmula1
+    </h2>
+  </div>
+
+  <!-- Menu -->
+  <ul class="sidebar-links list-unstyled mt-3 overflow-auto">
+
+    <h4 class="text-white fw-medium fs-6 position-relative d-flex align-items-center gap-2 my-2 text-nowrap">
+      <span>Main menu</span>
+      <div class="menu-separator"></div>
+    </h4>
+    <li>
+      <a class="d-flex align-items-center fw-medium text-nowrap gap-4 text-decoration-none px-3 py-3 rounded" style="color: #dbd4d4e3"
+        routerLink=""
+      >
+        <fa-icon [icon]="['fas', 'chart-line']"></fa-icon>
+        Dashboard
+      </a>
+    </li>
+    <li>
+      <a class="d-flex align-items-center fw-medium text-nowrap gap-4 text-decoration-none px-3 py-3 rounded" style="color: #dbd4d4e3"
+        routerLink=""
+      >
+        <fa-icon [icon]="['fas', 'home']"></fa-icon>
+        Overview
+      </a>
+    </li>
+
+    <h4 class="text-white fw-medium fs-6 position-relative d-flex align-items-center gap-2 my-2 text-nowrap">
+      <span>General</span>
+      <div class="menu-separator"></div>
+    </h4>
+    <li>
+      <a class="d-flex align-items-center fw-medium text-nowrap gap-4 text-decoration-none px-3 py-3 rounded" style="color: #dbd4d4e3"
+        routerLink=""
+      >
+       <fa-icon [icon]="['fas', 'bell']"></fa-icon>
+        Notifications
+      </a>
+    </li>
+
+    <h4 class="text-white fw-medium fs-6 position-relative d-flex align-items-center gap-2 my-2 text-nowrap">
+      <span>Account</span>
+      <div class="menu-separator"></div>
+    </h4>
+    <li>
+      <a class="d-flex align-items-center fw-medium text-nowrap gap-4 text-decoration-none px-3 py-3 rounded" style="color: #dbd4d4e3"
+        routerLink=""
+      >
+        <fa-icon [icon]="['fas', 'user']"></fa-icon>
+        Profile
+      </a>
+    </li>
+    <li>
+      <a class="d-flex align-items-center fw-medium text-nowrap gap-4 text-decoration-none px-3 py-3 rounded" style="color: #dbd4d4e3"
+        routerLink=""
+      >
+        <fa-icon [icon]="['fas', 'gear']"></fa-icon>
+        Settings
+      </a>
+    </li>
+
+  </ul>
+
+  <!-- User area -->
+  <div class="user-account d-flex align-items-center">
+
+    <div class="user-profile d-flex align-items-center gap-4" style="color: #e5dede;">
+
+      <img class="rounded-circle"
+        src="./assets/logos/fotoPerfil.jpg"
+        alt="Imagem de perfil do usuário"
+        width="42">
+      <div class="user-detail text-nowrap">
+        <h3 class="fs-5 fw-semibold">Matheus</h3>
+        <h3 class="fs-6 fw-semibold">Colombo</h3>
+      </div>
+
+    </div>
+
+  </div>
+
+</aside>
